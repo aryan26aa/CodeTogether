@@ -167,7 +167,7 @@ function EditorPage() {
     setIsCompiling(true);
     setOutputError("");
     try {
-      const response = await axios.post("http://localhost:5000/compile", {
+      const response = await axios.post("https://codetogether-j8fx.onrender.com/compile", {
         code: codeRef.current,
         language: selectedLanguage,
       });
