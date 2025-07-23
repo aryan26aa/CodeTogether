@@ -1,0 +1,33 @@
+{
+  "name": "CodeTogether",
+  "version": "2.0.0",
+  "description": "Professional Collaborative Coding Platform",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "collaborative",
+    "coding",
+    "real-time",
+    "editor",
+    "react",
+    "nodejs",
+    "socketio"
+  ],
+  "author": "CodeTogether Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+} 
